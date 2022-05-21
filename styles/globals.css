@@ -1,3 +1,57 @@
+.rotate-center-1 {
+  -webkit-animation: rotate-center1 .8s cubic-bezier(0.600, -0.280, 0.735, 0.045) both;
+          animation: rotate-center1 .8s cubic-bezier(0.600, -0.280, 0.735, 0.045) both;
+}
+
+.rotate-center-2 {
+	-webkit-animation: rotate-center2 .8s cubic-bezier(0.600, -0.280, 0.735, 0.045) both;
+	        animation: rotate-center2 .8s cubic-bezier(0.600, -0.280, 0.735, 0.045) both;
+}
+
+@-webkit-keyframes rotate-center1 {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@keyframes rotate-center1 {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@-webkit-keyframes rotate-center2 {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-center2 {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 html,
 body {
   padding: 0;
@@ -13,4 +67,6 @@ a {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
